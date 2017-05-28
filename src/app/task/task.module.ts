@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { MaterialModule } from '@angular/material';
+
 import {
   TaskRoutingModule,
   TaskListComponent,
@@ -13,7 +15,8 @@ import {
   imports: [
     CommonModule,
     FormsModule,
-    TaskRoutingModule
+    TaskRoutingModule,
+    MaterialModule
   ],
   declarations: [
     TaskListComponent,

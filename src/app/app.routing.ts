@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import {
   AuthGuard,
   NotFoundComponent
-} from './shared/shared.barrel'
+} from './shared/shared.barrel';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
