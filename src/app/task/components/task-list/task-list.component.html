@@ -1,8 +1,8 @@
+<md-card class="task-list-card">
 <h3>
   My Tasks
   <img *ngIf="loading" src="assets/loader.gif">
 </h3>
-<md-list>
   <md-card *ngFor="let task of tasks">
     <app-task-list-item
       [task]="task"
@@ -11,5 +11,7 @@
       (onDelete)="removeTask($event)"
     ></app-task-list-item>
   </md-card>
-</md-list>
-<button type="button" class="btn btn-default" (click)="addNewTask()" [disabled]="loading">Add New Task</button>
+  <md-card-actions>
+  	<button md-button color="primary" (click)="addNewTask()" [disabled]="loading">Add New Task</button>
+  </md-card-actions> 	
+</md-card>

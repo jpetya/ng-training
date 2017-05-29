@@ -1,3 +1,4 @@
+<md-card>
 <h3>Registration</h3>
 <form [formGroup]="form" (ngSubmit)="register()">
   <div class="form-group">
@@ -35,6 +36,7 @@
   <div *ngIf="!form.valid && !form.pristine" class="alert alert-warning">
     All fields should be filled and passwords should be matching values!
   </div>
-  <button md-button type="submit" color="primary" [disabled]="!form.valid || loading">Register</button>
-  <button md-button type="reset" color="warn">Reset</button>
+  <button md-button type="submit" color="primary" [disabled]="!form.valid || loading">REGISTER</button>
+  <button md-button type="reset" color="warn">RESET</button>
 </form>
+</md-card>

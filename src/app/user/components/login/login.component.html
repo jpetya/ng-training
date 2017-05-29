@@ -1,3 +1,4 @@
+<md-card>
 <h3>Log In</h3>
 <form [formGroup]="form" (ngSubmit)="login()">
   <div class="form-group">
@@ -16,5 +17,6 @@
       Password is required and should be at least 6 characters long!
     </div>
   </div>
-  <button md-button type="submit" color="primary" [disabled]="!form.valid || loading">Log In</button>
+  <button md-button type="submit" color="primary" [disabled]="!form.valid || loading">LOG IN</button>
 </form>
+</md-card>
